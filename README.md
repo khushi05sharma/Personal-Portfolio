@@ -75,12 +75,12 @@ Distributed under the **MIT License** — feel free to use, adapt, and modify as
 
 ---
 
-Developer 👩‍💻
+## Developer 👩‍💻
 
 **Khushi Sharma**
 
 MERN Stack Developer focused on building responsive and scalable full-stack applications.
-```
+
 ---
 
 ## Installation ⚙️
@@ -97,3 +97,4 @@ cd Personal-Portfolio
 # Open index.html in your browser (or use Live Server in VS Code)
 
 
+```
