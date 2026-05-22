@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,11 +25,19 @@
       </div>
 
       <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#connect">Connect</a></li>
+        <!-- hamburger button-->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#connect" class="nav-link">Connect</a></li>
         </ul>
       </nav>
     </header>
@@ -39,32 +47,23 @@
     <section id="hero" class="hero">
       <div class="hero-content">
         <div class="hero-avatar">
-          <img src="img/hero.png" alt="hero img" />
+          <img src="img/hero.png" alt="Khushi Sharma avatar" />
         </div>
         <div class="hero-text">
           <h1>
             Hiii, I'm
             <span>Khushi Sharma</span>
           </h1>
-          <p>Frontend developer 💻 | UI/UX Enthusiast 🎨</p>
+          <p>MERN Stack Developer 💻 | UI/UX Designer 🎨</p>
           <div class="hero-buttons">
             <a href="#connect" class="btn">Say Hi 👋</a>
-            <!-- <a
-              href="assets/resume-khushi.pdf"
+
+            <a
+              href="resume/Khushi fullstack resume.pdf"
               class="btn secondary"
               target="_blank"
-              >View Resume</a
-            > -->
-             <a 
-          href="resume/Khushi dev resume.pdf" 
-          class="btn secondary" 
-          target="_blank"
-        >Frontend Resume</a>
-        <a 
-          href="resume/Khushi design resume.pdf" 
-          class="btn secondary" 
-          target="_blank"
-        >UI/UX Resume</a>
+              >Resume 📄</a
+            >
           </div>
         </div>
       </div>
@@ -74,21 +73,28 @@
 
     <section id="about" class="about-section">
       <h2>About Me</h2>
-      <p id="dev">I'm a Front-End Developer from <br />India.</p>
+      <p id="dev">I'm a MERN Stack Developer from <br />India.</p>
 
       <div class="about-blob"></div>
 
       <div class="about-card">
         <p>
-          I'm Khushi Sharma — a Front-End Developer who enjoys building clean,
-          responsive, and user-friendly web interfaces using
-          <span>HTML, CSS, JavaScript, and React.js</span>. Right now, I'm
-          diving deeper into the <span>MERN stack</span> and exploring how AI
-          can enhance web experiences 🌸. <br /><br />
+          I'm Khushi Sharma — a MERN Stack Developer who builds responsive,
+          user-focused web applications with clean design and real-world
+          functionality. I work with technologies like
+          <span>MongoDB, Express.js, React, Node.js, and TypeScript</span> to
+          create full-stack experiences that are both functional and visually
+          engaging. <br />
 
-          I enjoy experimenting with UI/UX, animations, and modern web design.
-          Whether it's code or Figma, I like turning ideas into interactive
-          experiences 💻🎨.
+          I completed a
+          <span>6-month remote internship at CC App Labs, Bangalore</span> where
+          I worked on MyRideMate — shipping real UI features on a production
+          travel platform used by actual users. <br />
+          <br />
+          What makes my work a little different is that I think in
+          <span>design and code together</span>. I enjoy wireframe ideas in
+          Figma before turning them into interactive, user-focused experiences
+          and functional through code.🌸
         </p>
 
         <div class="education">
@@ -97,11 +103,11 @@
           <ul>
             <li>
               <strong>Diploma in Information Technology</strong><br />
-              Government Polytechnic,Uttarakhand 2020 - 2023
+              Government Polytechnic, Uttarakhand 2020 - 2023
             </li>
             <li>
               <strong>Bachelor of Technology in Computer Science</strong><br />
-              Sunderdeep Engineering College,UttarPradesh 2023 – Present
+              Sunderdeep Engineering College, UttarPradesh 2023 - 2026
             </li>
           </ul>
         </div>
@@ -116,32 +122,111 @@
       <div class="skills-container">
         <div class="skills-groups">
           <div class="skills-group">
-            <h3>Front-End Development</h3>
+            <h3>MERN &amp; Full-Stack</h3>
+            <div class="skill-card">MongoDB</div>
+            <div class="skill-card">Express.js</div>
+            <div class="skill-card">React.js</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">TypeScript</div>
+            <div class="skill-card">REST APIs</div>
+            <div class="skill-card">JWT Auth</div>
+          </div>
+
+          <div class="skills-group">
+            <h3>Frontend</h3>
             <div class="skill-card">HTML5</div>
             <div class="skill-card">CSS3</div>
             <div class="skill-card">JavaScript</div>
-            <div class="skill-card">React.js</div>
+            <div class="skill-card">Tailwind CSS</div>
+            <div class="skill-card">Bootstrap</div>
             <div class="skill-card">Responsive Design</div>
           </div>
 
           <div class="skills-group">
-            <h3>UI/UX & Design Tools</h3>
+            <h3>UI/UX &amp; Design Tools</h3>
             <div class="skill-card">Figma</div>
             <div class="skill-card">Canva</div>
             <div class="skill-card">Framer</div>
           </div>
 
           <div class="skills-group">
-            <h3>Frameworks & Tools</h3>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">APIs</div>
-            <div class="skill-card">Tailwind CSS</div>
-            <div class="skill-card">Bootstrap</div>
+            <h3>Dev &amp; Deployment</h3>
+            <div class="skill-card">Git &amp; GitHub</div>
+            <div class="skill-card">npm</div>
+            <div class="skill-card">Vercel</div>
+            <div class="skill-card">Render</div>
+            <div class="skill-card">MongoDB Atlas</div>
           </div>
         </div>
 
         <div class="skills-avatar">
-          <img src="img/skills.png" alt="skills-avatar" />
+          <img src="img/skills.png" alt="skills avatar" />
+        </div>
+      </div>
+    </section>
+
+    <!-- experience section -->
+
+    <section id="experience" class="experience-section">
+      <h2>Experience</h2>
+
+      <div class="experience-card">
+        <div class="exp-left">
+          <div class="exp-company-badge">CC</div>
+          <div class="exp-meta">
+            <h3 class="exp-company">CC App Labs</h3>
+            <p class="exp-role">UI Developer Intern</p>
+            <p class="exp-duration">
+              <i class="fa-regular fa-calendar"></i>
+              Oct 2025 - Mar 2026 &nbsp;·&nbsp; 6 months
+            </p>
+            <p class="exp-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Bangalore, India(Remote)
+            </p>
+          </div>
+        </div>
+        <div class="exp-right">
+          <p class="exp-product">
+            Worked on <strong>MyRideMate</strong> — a production travel planning
+            platform that helps users plan and enjoy group trips without the
+            planning anxiety.
+          </p>
+
+          <ul class="exp-highlights">
+            <li>
+              <span class="exp-bullet">🏠</span>
+              Built the <strong>Homepage UI</strong> — hero, destination cards,
+              pagination, newsletter subscription, and contact form
+            </li>
+            <li>
+              <span class="exp-bullet">🔐</span>
+              Designed <strong>Authentication flows</strong> — signup, login,
+              OTP verification, forgot &amp; reset password pages
+            </li>
+            <li>
+              <span class="exp-bullet">📝</span>
+              Created the entire <strong>Blog system</strong> (Traveler's
+              Chronicles) with dynamic slug-based routing and blog listing pages
+            </li>
+            <li>
+              <span class="exp-bullet">📱</span>
+              Handled <strong>responsive design fixes</strong>, PR reviews, and
+              platform-level bug resolution
+            </li>
+          </ul>
+
+          <div class="exp-tags">
+            <span>React</span>
+            <span>TailwindCSS</span>
+            <span>Responsive Design</span>
+            <span>Git &amp; GitHub</span>
+            <span>PR Workflow</span>
+          </div>
+
+          <a href="experience.html" class="exp-link">
+            View Full Experience →
+          </a>
         </div>
       </div>
     </section>
@@ -159,109 +244,168 @@
       <div class="project-grid">
         <div class="project-blob"></div>
         <!-- code projects -->
-        <div class="project-card">
-          <img src="img/portfolio.png" alt="portfolio" />
-          <h3>Personal Portfolio</h3>
-          <p>
-            Crafted using HTML, CSS & JavaScript, this responsive portfolio
-            highlights my journey as a front-end developer. It blends clean
-            design with a touch of personality — just like the websites I love
-            to build.
-          </p>
+        <!-- NEW: Featured badge -->
+        <span class="featured-badge">✦ Featured Project</span>
 
-          <div class="tags">
-            <span>Html</span><span>CSS</span><span>JavaScript</span>
-          </div>
-          <div class="project-links">
-            <a href="#" target="_blank">Live</a>
-            <a href="#" target="_blank">Github</a>
+        <!-- NEW: Image wrapper for hover overlay effect -->
+        <div class="card-img-wrapper">
+          <!-- Replace with your Olive & Thyme homepage screenshot -->
+          <img src="img/homepage.jpeg" alt="Olive and Thyme homepage" />
+          <div class="img-overlay">
+            <span>View Project →</span>
           </div>
         </div>
 
-        <!-- second project -->
-
-        <div class="project-card">
-          <img src="img/moodtracker.jpeg" alt="moodtracker" />
-          <h3>EmoTracker</h3>
+        <div class="featured-content">
+          <h3>Olive &amp; Thyme</h3>
           <p>
-            A calming and responsive React app to log your mood and emotion for
-            the day, write a short note, and browse past entries through a sweet
-            little calendar view.
+            A full-stack recipe sharing platform built on the MERN stack — where
+            users discover recipes, share their own, and manage their cooking
+            journey. Features health-goal-based filtering, JWT authentication
+            with bcrypt, and a real-time notification system.
+          </p>
+
+          <p class="tech-highlight">
+            <i class="fa-solid fa-code"></i>
+            JWT auth · Spoonacular API with debouncing · bcrypt pre-save hook ·
+            Real-time notifications · Deployed on Vercel + Render
           </p>
 
           <div class="tags">
-            <span>React</span><span>Html</span><span>CSS</span
-            ><span>React Router</span>
+            <span>MongoDB</span>
+            <span>Express.js</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>TypeScript</span>
+            <span>Tailwind</span>
+            <span>JWT</span>
+            <span>REST API</span>
           </div>
-          <div class="project-links">
+
+          <!-- NEW: Three buttons — Live Demo, Frontend repo, Backend repo -->
+          <div class="project-links featured-links">
             <a
-              href="https://khushi05sharma.github.io/EmoTracker/"
+              href="https://olive-and-thyme.vercel.app"
               target="_blank"
-              >Live</a
+              class="btn-live"
+              >🌐 Live Demo</a
             >
             <a
-              href="https://github.com/khushi05sharma/EmoTracker.git"
+              href="https://github.com/khushi05sharma/olive-and-thyme-frontend"
               target="_blank"
-              >Github</a
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> Frontend</a
+            >
+            <a
+              href="https://github.com/khushi05sharma/olive-and-thyme-backend"
+              target="_blank"
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> Backend</a
             >
           </div>
         </div>
+      </div>
 
-        <!-- figma designs -->
+      <!-- second project -->
 
-        <div class="project-card">
-          <img src="img/donuts.png" alt="Donuts" />
-          <h3>Donut UI Concept</h3>
-          <p>
-            Minimal UI concept for a donut brand, featuring bold fonts and
-            flavor focus. Designed for a fresh, visually appealing browsing
-            experience.
-          </p>
-
-          <div class="tags">
-            <span>Figma</span><span> Minimal UI</span
-            ><span>Product Display</span>
-          </div>
-          <div class="project-links">
-            <a
-              href="https://www.figma.com/design/8rRyEQ2LW3QlfeMrFlqpU7/Donuts?node-id=0-1&t=rlVDPU9jMLsqunGG-1"
-              target="_blank"
-              >View Design</a
-            >
-            <a
-              href="https://github.com/khushi05sharma/Donut-Delight-UI.git"
-              target="_blank"
-              >Github</a
-            >
-          </div>
+      <div class="project-card">
+        <!-- NEW: Image wrapper for hover overlay -->
+        <div class="card-img-wrapper">
+          <img src="img/moodtracker.jpeg" alt="EmoTracker app" />
+          <div class="img-overlay"><span>View Project →</span></div>
         </div>
+        <h3>EmoTracker</h3>
+        <!-- CHANGED: Added technical detail (useState/useEffect, localStorage) -->
+        <p>
+          A calming React app to log your daily mood and emotions. Manages state
+          with React hooks, uses React Router for navigation, and persists
+          entries across sessions with localStorage.
+        </p>
+        <div class="tags">
+          <span>React</span><span>React Router</span> <span>HTML</span
+          ><span>CSS</span>
+        </div>
+        <!-- CHANGED: Upgraded from gradient text links to styled buttons -->
+        <div class="project-links">
+          <a
+            href="https://khushi05sharma.github.io/EmoTracker/"
+            target="_blank"
+            class="btn-live"
+            >🌐 Live</a
+          >
+          <a
+            href="https://github.com/khushi05sharma/EmoTracker.git"
+            target="_blank"
+            class="btn-repo"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          >
+        </div>
+      </div>
 
-        <!-- second design -->
+      <!-- figma designs -->
 
-        <div class="project-card">
-          <img src="img/bulgari.png" alt="bulgari" />
-          <h3>BULGARI Concept Design</h3>
-          <p>
-            A minimal and stylish redesign concept for BVLGARI's official
-            website. Highlights timeless jewelry collections with a refined
-            visual layout.
-          </p>
+      <div class="project-card">
+        <div class="card-img-wrapper">
+          <img src="img/recipe-design.png" alt="Recipe-Platform Concept" />
+          <div class="img-overlay"><span>View Design →</span></div>
+        </div>
+        <h3>Recipe Platform Concept</h3>
+        <p>
+          A modern UI/UX concept for a community-based recipe sharing platform,
+          designed using Figma. This project highlights a complete design
+          workflow — from low-fidelity wireframe to polished desktop and mobile
+          interfaces — focused on creating a clean, responsive, and
+          user-friendly cooking platform experience.
+        </p>
+        <div class="tags">
+          <span>Figma</span><span>Modern UI/UX</span
+          ><span>Product Display</span>
+        </div>
+        <div class="project-links">
+          <a
+            href="https://www.figma.com/design/RCKeS66Z64oqPfYwCpCTsC/recipe-platform-design?node-id=0-1&t=aXl6cfDWZJhWx1kU-1"
+            target="_blank"
+            class="btn-live"
+            >🎨 View Design</a
+          >
+          <a
+            href="https://github.com/khushi05sharma/Recipe-Platform-Concept-Design"
+            target="_blank"
+            class="btn-repo"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          >
+        </div>
+      </div>
 
-          <div class="tags">
-            <span>Figma</span><span> Modern UI</span><span>Typography</span>
-          </div>
-          <div class="project-links">
-            <a
-              href="https://www.figma.com/design/sl7B8wy7Wmxd7gmSOEHKRc/bulgari?node-id=0-1&t=ntVOrOkXG7pA86rr-1"
-              target="_blank"
-              >View Design</a
-            >
-            <a
-              href="https://github.com/khushi05sharma/BVLGARI-Concept-Design.git"
-              target="_blank"
-              >Github</a
-            >
-          </div>
+      <!-- second design -->
+
+      <div class="project-card">
+        <div class="card-img-wrapper">
+          <img src="img/bulgari.png" alt="BVLGARI Concept Design" />
+          <div class="img-overlay"><span>View Design →</span></div>
+        </div>
+        <h3>BVLGARI Concept Design</h3>
+        <p>
+          A minimal and stylish redesign concept for BVLGARI's official website.
+          Highlights timeless jewelry collections with a refined visual layout
+          and editorial typography.
+        </p>
+        <div class="tags">
+          <span>Figma</span><span>Modern UI</span><span>Typography</span>
+        </div>
+        <div class="project-links">
+          <a
+            href="https://www.figma.com/design/sl7B8wy7Wmxd7gmSOEHKRc/bulgari?node-id=0-1&t=ntVOrOkXG7pA86rr-1"
+            target="_blank"
+            class="btn-live"
+            >🎨 View Design</a
+          >
+          <a
+            href="https://github.com/khushi05sharma/BVLGARI-Concept-Design.git"
+            target="_blank"
+            class="btn-repo"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          >
         </div>
       </div>
     </section>
@@ -302,10 +446,16 @@
           </div>
 
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/khushi-sharma-dev/" target="_blank" title="Linkedin"
+            <a
+              href="https://www.linkedin.com/in/khushi-sharma-dev/"
+              target="_blank"
+              title="Linkedin"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
-            <a href="https://github.com/khushi05sharma" target="_blank" title="GitHub"
+            <a
+              href="https://github.com/khushi05sharma"
+              target="_blank"
+              title="GitHub"
               ><i class="fa-brands fa-github"></i
             ></a>
           </div>
