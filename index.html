@@ -171,14 +171,16 @@
       <h2>Experience</h2>
 
       <div class="experience-card">
+        <!-- Left column: company info -->
         <div class="exp-left">
+          <!-- NEW: Company badge with initials -->
           <div class="exp-company-badge">CC</div>
           <div class="exp-meta">
             <h3 class="exp-company">CC App Labs</h3>
             <p class="exp-role">UI Developer Intern</p>
             <p class="exp-duration">
               <i class="fa-regular fa-calendar"></i>
-              Oct 2025 - Mar 2026 &nbsp;·&nbsp; 6 months
+              Oct 2025 – Mar 2026 &nbsp;·&nbsp; 6 months
             </p>
             <p class="exp-location">
               <i class="fa-solid fa-location-dot"></i>
@@ -186,6 +188,8 @@
             </p>
           </div>
         </div>
+
+        <!-- Right column: what was built -->
         <div class="exp-right">
           <p class="exp-product">
             Worked on <strong>MyRideMate</strong> — a production travel planning
@@ -193,29 +197,41 @@
             planning anxiety.
           </p>
 
+          <!-- NEW: Bullet list of contributions -->
           <ul class="exp-highlights">
             <li>
               <span class="exp-bullet">🏠</span>
-              Built the <strong>Homepage UI</strong> — hero, destination cards,
-              pagination, newsletter subscription, and contact form
+              <div class="exp-text">
+                Built the <strong>Homepage UI</strong> including hero,
+                destination cards, pagination, newsletter subscription, and
+                contact form
+              </div>
             </li>
             <li>
               <span class="exp-bullet">🔐</span>
-              Designed <strong>Authentication flows</strong> — signup, login,
-              OTP verification, forgot &amp; reset password pages
+              <div class="exp-text">
+                Designed <strong>Authentication pages</strong> including signup,
+                login, OTP verification, forgot &amp; reset password pages
+              </div>
             </li>
             <li>
               <span class="exp-bullet">📝</span>
-              Created the entire <strong>Blog system</strong> (Traveler's
-              Chronicles) with dynamic slug-based routing and blog listing pages
+              <div class="exp-text">
+                Created the entire <strong>Blog system</strong> (Traveler's
+                Chronicles) with dynamic slug-based routing and blog listing
+                pages
+              </div>
             </li>
             <li>
               <span class="exp-bullet">📱</span>
-              Handled <strong>responsive design fixes</strong>, PR reviews, and
-              platform-level bug resolution
+              <div class="exp-text">
+                Handled <strong>responsive design fixes</strong>, PR reviews,
+                and platform-level bug resolution
+              </div>
             </li>
           </ul>
 
+          <!-- NEW: Tech pills for internship -->
           <div class="exp-tags">
             <span>React</span>
             <span>TailwindCSS</span>
@@ -224,6 +240,7 @@
             <span>PR Workflow</span>
           </div>
 
+          <!-- NEW: Link to dedicated experience page -->
           <a href="experience.html" class="exp-link">
             View Full Experience →
           </a>
@@ -244,31 +261,14 @@
       <div class="project-grid">
         <div class="project-blob"></div>
         <!-- code projects -->
-        <!-- NEW: Featured badge -->
-        <span class="featured-badge">✦ Featured Project</span>
-
-        <!-- NEW: Image wrapper for hover overlay effect -->
-        <div class="card-img-wrapper">
-          <!-- Replace with your Olive & Thyme homepage screenshot -->
-          <img src="img/homepage.jpeg" alt="Olive and Thyme homepage" />
-          <div class="img-overlay">
-            <span>View Project →</span>
-          </div>
-        </div>
-
-        <div class="featured-content">
+        <div class="project-card">
+          <img src="img/homepagee.jpeg" alt="portfolio" />
           <h3>Olive &amp; Thyme</h3>
           <p>
             A full-stack recipe sharing platform built on the MERN stack — where
             users discover recipes, share their own, and manage their cooking
             journey. Features health-goal-based filtering, JWT authentication
             with bcrypt, and a real-time notification system.
-          </p>
-
-          <p class="tech-highlight">
-            <i class="fa-solid fa-code"></i>
-            JWT auth · Spoonacular API with debouncing · bcrypt pre-save hook ·
-            Real-time notifications · Deployed on Vercel + Render
           </p>
 
           <div class="tags">
@@ -281,8 +281,6 @@
             <span>JWT</span>
             <span>REST API</span>
           </div>
-
-          <!-- NEW: Three buttons — Live Demo, Frontend repo, Backend repo -->
           <div class="project-links featured-links">
             <a
               href="https://olive-and-thyme.vercel.app"
@@ -304,108 +302,98 @@
             >
           </div>
         </div>
-      </div>
 
-      <!-- second project -->
+        <!-- second project -->
 
-      <div class="project-card">
-        <!-- NEW: Image wrapper for hover overlay -->
-        <div class="card-img-wrapper">
-          <img src="img/moodtracker.jpeg" alt="EmoTracker app" />
-          <div class="img-overlay"><span>View Project →</span></div>
-        </div>
-        <h3>EmoTracker</h3>
-        <!-- CHANGED: Added technical detail (useState/useEffect, localStorage) -->
-        <p>
-          A calming React app to log your daily mood and emotions. Manages state
-          with React hooks, uses React Router for navigation, and persists
-          entries across sessions with localStorage.
-        </p>
-        <div class="tags">
-          <span>React</span><span>React Router</span> <span>HTML</span
-          ><span>CSS</span>
-        </div>
-        <!-- CHANGED: Upgraded from gradient text links to styled buttons -->
-        <div class="project-links">
-          <a
-            href="https://khushi05sharma.github.io/EmoTracker/"
-            target="_blank"
-            class="btn-live"
-            >🌐 Live</a
-          >
-          <a
-            href="https://github.com/khushi05sharma/EmoTracker.git"
-            target="_blank"
-            class="btn-repo"
-            ><i class="fa-brands fa-github"></i> GitHub</a
-          >
-        </div>
-      </div>
+        <div class="project-card">
+          <img src="img/emotracker.jpeg" alt="moodtracker" />
+          <h3>EmoTracker</h3>
+          <p>
+            A calming React app to log your daily mood and emotions. Manages
+            state with React hooks, uses React Router for navigation, and
+            persists entries across sessions with localStorage.
+          </p>
 
-      <!-- figma designs -->
+          <div class="tags">
+            <span>React</span><span>Html</span><span>CSS</span
+            ><span>React Router</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://khushi05sharma.github.io/EmoTracker/"
+              target="_blank"
+              class="btn-live"
+              >🌐 Live</a
+            >
+            <a
+              href="https://github.com/khushi05sharma/EmoTracker.git"
+              target="_blank"
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
 
-      <div class="project-card">
-        <div class="card-img-wrapper">
-          <img src="img/recipe-design.png" alt="Recipe-Platform Concept" />
-          <div class="img-overlay"><span>View Design →</span></div>
-        </div>
-        <h3>Recipe Platform Concept</h3>
-        <p>
-          A modern UI/UX concept for a community-based recipe sharing platform,
-          designed using Figma. This project highlights a complete design
-          workflow — from low-fidelity wireframe to polished desktop and mobile
-          interfaces — focused on creating a clean, responsive, and
-          user-friendly cooking platform experience.
-        </p>
-        <div class="tags">
-          <span>Figma</span><span>Modern UI/UX</span
-          ><span>Product Display</span>
-        </div>
-        <div class="project-links">
-          <a
-            href="https://www.figma.com/design/RCKeS66Z64oqPfYwCpCTsC/recipe-platform-design?node-id=0-1&t=aXl6cfDWZJhWx1kU-1"
-            target="_blank"
-            class="btn-live"
-            >🎨 View Design</a
-          >
-          <a
-            href="https://github.com/khushi05sharma/Recipe-Platform-Concept-Design"
-            target="_blank"
-            class="btn-repo"
-            ><i class="fa-brands fa-github"></i> GitHub</a
-          >
-        </div>
-      </div>
+        <!-- figma designs -->
 
-      <!-- second design -->
+        <div class="project-card">
+          <img src="img/recipe-design.png" alt="recipe-design concept" />
+          <h3>Recipe Platform Concept</h3>
+          <p>
+            A modern UI/UX concept for a community-based recipe sharing
+            platform, designed using Figma. This project highlights a complete
+            design workflow from low-fidelity wireframe to polished desktop and
+            mobile interfaces.
+          </p>
+          <div class="tags">
+            <span>Figma</span><span>Modern UI/UX</span
+            ><span>Product Display</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://www.figma.com/design/RCKeS66Z64oqPfYwCpCTsC/recipe-platform-design?node-id=0-1&t=aXl6cfDWZJhWx1kU-1"
+              target="_blank"
+              class="btn-live"
+              >🎨 View Design</a
+            >
+            <a
+              href="https://github.com/khushi05sharma/Recipe-Platform-Concept-Design"
+              target="_blank"
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
 
-      <div class="project-card">
-        <div class="card-img-wrapper">
-          <img src="img/bulgari.png" alt="BVLGARI Concept Design" />
-          <div class="img-overlay"><span>View Design →</span></div>
-        </div>
-        <h3>BVLGARI Concept Design</h3>
-        <p>
-          A minimal and stylish redesign concept for BVLGARI's official website.
-          Highlights timeless jewelry collections with a refined visual layout
-          and editorial typography.
-        </p>
-        <div class="tags">
-          <span>Figma</span><span>Modern UI</span><span>Typography</span>
-        </div>
-        <div class="project-links">
-          <a
-            href="https://www.figma.com/design/sl7B8wy7Wmxd7gmSOEHKRc/bulgari?node-id=0-1&t=ntVOrOkXG7pA86rr-1"
-            target="_blank"
-            class="btn-live"
-            >🎨 View Design</a
-          >
-          <a
-            href="https://github.com/khushi05sharma/BVLGARI-Concept-Design.git"
-            target="_blank"
-            class="btn-repo"
-            ><i class="fa-brands fa-github"></i> GitHub</a
-          >
+        <!-- second design -->
+
+        <div class="project-card">
+          <img src="img/bulgari.png" alt="bulgari" />
+          <h3>BULGARI Concept Design</h3>
+          <p>
+            A minimal and stylish redesign concept for BVLGARI's official
+            website. Highlights timeless jewelry collections like Serpenti,
+            B.zero1, Divas’ Dream, and Tubogas, blending Roman inspiration with
+            a refined visual layout.
+          </p>
+
+          <div class="tags">
+            <span>Figma</span><span> Modern UI</span><span>Typography</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://www.figma.com/design/sl7B8wy7Wmxd7gmSOEHKRc/bulgari?node-id=0-1&t=ntVOrOkXG7pA86rr-1"
+              target="_blank"
+              class="btn-live"
+              >🎨 View Design</a
+            >
+            <a
+              href="https://github.com/khushi05sharma/BVLGARI-Concept-Design.git"
+              target="_blank"
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
         </div>
       </div>
     </section>
