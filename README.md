@@ -21,11 +21,11 @@ Built from scratch using **HTML, CSS, and JavaScript**, this portfolio reflects 
 
 | Full Portfolio Preview                          |
 | ----------------------------------------------- |
-| ![Full Portfolio](./screenshots/portfolio.jpeg) |
+| ![Full Portfolio](./screenshots/home-page.jpeg) |
 
-| Design Section                                 | Code Section                               |
-| ---------------------------------------------- | ------------------------------------------ |
-| ![Design Screenshot](./screenshots/design.png) | ![Code Screenshot](./screenshots/code.png) |
+| Design Section                                       | Code Section                                     |
+| ---------------------------------------------------- | ------------------------------------------------ |
+| ![Design Screenshot](./screenshots/design-page.jpeg) | ![Code Screenshot](./screenshots/code-page.jpeg) |
 
 ---
 
@@ -45,6 +45,7 @@ Built from scratch using **HTML, CSS, and JavaScript**, this portfolio reflects 
 - **Home:** A friendly welcome with quick resume links
 - **About Me:** My journey as a front-end developer
 - **Skills:** Tools and technologies I work with
+- **Experience** My internship journey description
 - **Projects:** A mix of web apps and UI design concepts
 - **Contact:** Simple form to reach out, plus social links
 
@@ -57,15 +58,6 @@ Simply explore the live site or run locally:
 - Click **Say Hi!**, or use the contact form to reach out
 - View live demos or GitHub links for each project
 - Navigate through sections for a tailored glimpse into my skills and screen presence
-
----
-
-## Future Enhancements 🌱
-
-- Add a blog or journal to share learning experiences
-- Introduce light/dark theme toggle
-- Enhance micro-interactions for increased engagement
-- Transition to a React-based version with improved scalability
 
 ---
 
