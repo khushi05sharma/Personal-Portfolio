@@ -1,146 +1,301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Projects</title>
+    <title>Code Projects — Khushi Sharma</title>
     <link rel="stylesheet" href="code-projects.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <!----- header part ---->
-
+    <!--  HEADER -->
     <header class="page-header">
       <h1>My Code Projects</h1>
+
+      <a href="index.html" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+      </a>
     </header>
 
-    <!---- section part ---->
     <section class="projects-grid">
-      <!-- first project -->
+      <!-- CARD 1: OLIVE & THYME-->
+      <div class="project-card featured-card">
+        <span class="featured-badge">✦ Featured Project</span>
 
+        <div class="card-img-wrapper">
+          <img src="img/fullpage.jpeg" alt="Olive and Thyme homepage" />
+        </div>
+
+        <div class="card-content featured-content">
+          <div class="card-top">
+            <h2>Olive &amp; Thyme</h2>
+
+            <p class="card-tagline">
+              A full-stack recipe sharing platform — discover, share, and manage
+              recipes with health-goal filtering, JWT auth, and real-time
+              notifications.
+            </p>
+
+            <div class="tech-highlight-box">
+              <i class="fa-solid fa-code"></i>
+              <span>
+                JWT auth · Debounced Spoonacular API · Real-time notification
+                system · Deployed on Vercel + Render
+              </span>
+            </div>
+
+            <div class="feature-list">
+              <p class="feature-list-heading">
+                <i class="fa-solid fa-star fh-icon"></i> Key Features
+              </p>
+              <ul>
+                <li>
+                  <strong>Health Goal Filtering</strong> — Diabetic Friendly,
+                  Heart Healthy, and more mapped to real Spoonacular diet params
+                </li>
+                <li>
+                  <strong>User Authentication</strong> — JWT tokens, bcrypt
+                  password hashing via Mongoose pre-save hook, protected routes
+                </li>
+                <li>
+                  <strong>Recipe Management</strong> — Upload recipes with
+                  ingredients and instructions stored in MongoDB
+                </li>
+                <li>
+                  <strong>Notification System</strong> — Real-time feed created
+                  when someone likes or comments on your recipe
+                </li>
+                <li>
+                  <strong>Forgot Password Flow</strong> — Secure token with
+                  expiry time, email via Resend API
+                </li>
+                <li>
+                  <strong>Performance</strong> — Debounced search and filters to
+                  keep API calls efficient
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tech stack pills -->
+          <div class="skills">
+            <span>MongoDB</span><span>Express.js</span><span>React</span>
+            <span>Node.js</span><span>TypeScript</span><span>Tailwind CSS</span>
+            <span>JWT</span><span>bcrypt</span><span>REST API</span>
+            <span>Spoonacular API</span><span>Vercel</span><span>Render</span>
+          </div>
+
+          <div class="links">
+            <a
+              href="https://olive-and-thyme-frontend.vercel.app/"
+              target="_blank"
+              class="btn-live"
+              ><i class="fa-solid fa-globe"></i> Live Demo</a
+            >
+            <a
+              href="https://github.com/khushi05sharma/olive-and-thyme-frontend"
+              target="_blank"
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> Frontend</a
+            >
+            <a
+              href="https://github.com/khushi05sharma/olive-and-thyme-backend"
+              target="_blank"
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> Backend</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: PERSONAL PORTFOLIO -->
       <div class="project-card">
-        <img src="img/portfolio.png" alt="portfolio-image" />
+        <div class="card-img-wrapper">
+          <img src="img/portfolio.png" alt="Personal Portfolio screenshot" />
+        </div>
 
         <div class="card-content">
-          <h2>Personal Portfolio</h2>
-          <p>
-            Crafted using HTML, CSS & JavaScript, this responsive portfolio
-            highlights my journey as a front-end developer. It blends clean
-            design with a touch of personality — just like the websites I love
-            to build.
-          </p>
+          <div class="card-top">
+            <h2>Personal Portfolio</h2>
+
+            <p>
+              A fully responsive developer portfolio built with HTML, CSS, and
+              JavaScript — designed to showcase both coding and UI/UX work.
+              Features smooth scroll animations, a working contact form via
+              Formspree, and a distinct pink-gradient visual identity.
+            </p>
+
+            <div class="feature-list">
+              <p class="feature-list-heading">
+                <i class="fa-solid fa-star fh-icon"></i> Highlights
+              </p>
+              <ul>
+                <li>
+                  Intersection Observer scroll-reveal animations on project
+                  cards
+                </li>
+                <li>
+                  Contact form with Formspree integration and envelope popup
+                  feedback
+                </li>
+                <li>
+                  Separate pages for Code and Design projects with consistent
+                  styling
+                </li>
+                <li>Mobile-responsive with hamburger navigation</li>
+                <li>
+                  Custom gradient text animation and decorative blob backgrounds
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div class="skills">
             <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>Intersection Observer</span><span>Formspree</span
+            ><span>Responsive Design</span>
           </div>
 
           <div class="links">
             <a
               href="https://khushi05sharma.github.io/Personal-Portfolio/"
               target="_blank"
-              >Live</a
+              class="btn-live"
+              ><i class="fa-solid fa-globe"></i> Live</a
             >
             <a
               href="https://github.com/khushi05sharma/Personal-Portfolio"
               target="_blank"
-              >Github</a
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> GitHub</a
             >
           </div>
         </div>
       </div>
 
-      <!-- second project -->
-
+      <!--CARD 3: EMOTRACKER -->
       <div class="project-card">
-        <img src="img/moodtracker.jpeg" alt="moodtracker-image" />
+        <div class="card-img-wrapper">
+          <img src="img/emotracker.jpeg" alt="EmoTracker app screenshot" />
+        </div>
 
         <div class="card-content">
-          <h2>EmoTracker</h2>
-          <p>
-            A calming and responsive React app to log your mood and emotion for
-            the day, write a short note, and browse past entries through a sweet
-            little calendar view.
-          </p>
+          <div class="card-top">
+            <h2>EmoTracker 🌸</h2>
+
+            <p>
+              A minimal, soothing mood-tracking app built with React and Vite.
+              EmoTracker helps you express your emotions, journal your day, and
+              reflect on how you feel — one entry at a time, in a calm pastel
+              space.
+            </p>
+
+            <div class="feature-list">
+              <p class="feature-list-heading">
+                <i class="fa-solid fa-star fh-icon"></i> Features
+              </p>
+              <ul>
+                <li>
+                  Write a short note and select an emotion with emoji labels
+                </li>
+                <li>Automatic date stamping on every entry</li>
+                <li>
+                  Separate Past Notes page to reflect on emotional history
+                </li>
+                <li>
+                  HashRouter-based navigation for smooth GitHub Pages deployment
+                </li>
+                <li>Fully responsive — works on all screen sizes</li>
+                <li>
+                  Soft pastel UI designed for calm, distraction-free journaling
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div class="skills">
-            <span>React</span><span>Html</span><span>CSS</span
-            ><span>React Router</span>
+            <span>React</span><span>Vite</span><span>React Router DOM</span>
+            <span>CSS</span><span>GitHub Pages</span><span>HashRouter</span>
           </div>
 
           <div class="links">
             <a
               href="https://khushi05sharma.github.io/EmoTracker/"
               target="_blank"
-              >Live</a
+              class="btn-live"
+              ><i class="fa-solid fa-globe"></i> Live</a
             >
             <a
               href="https://github.com/khushi05sharma/EmoTracker.git"
               target="_blank"
-              >Github</a
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> GitHub</a
             >
           </div>
         </div>
       </div>
 
-      <!-- third project -->
-
+      <!-- CARD 4: SERENITY BREATH WEB -->
       <div class="project-card">
-        <img src="img/breathing.jpeg" alt="breathing" />
+        <div class="card-img-wrapper">
+          <img src="img/breathing.jpeg" alt="Serenity Breath Web screenshot" />
+        </div>
 
         <div class="card-content">
-          <h2>Serenity-Breath-Web</h2>
-          <p>
-            A guided breathing web app that helps users relax through animated
-            prompts and a clean interface. Developed using HTML, CSS, and
-            JavaScript to demonstrate interactive front-end design.
-          </p>
+          <div class="card-top">
+            <h2>Serenity Breath Web 🌿</h2>
+
+            <p>
+              A calming breathing meditation web app that guides users through
+              mindful breathing routines — with peaceful visuals, ambient music,
+              and animated prompts that merge beautiful UI with real
+              interactivity.
+            </p>
+
+            <div class="feature-list">
+              <p class="feature-list-heading">
+                <i class="fa-solid fa-star fh-icon"></i> Features
+              </p>
+              <ul>
+                <li>Animated breathing guide — Inhale → Hold → Exhale cycle</li>
+                <li>Motivational quotes that auto-update every few seconds</li>
+                <li>Soft blurred full-screen video background</li>
+                <li>Meditation music with volume, mute, and stop controls</li>
+                <li>Background customisation with live preview</li>
+                <li>
+                  CSS keyframe animations and smooth UI transitions throughout
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div class="skills">
             <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>CSS Keyframes</span><span>HTML5 Audio API</span>
+            <span>Google Fonts</span><span>Responsive Design</span>
           </div>
 
           <div class="links">
-           <a
+            <a
               href="https://khushi05sharma.github.io/serenity-breath-web/"
               target="_blank"
-              >Live</a
+              class="btn-live"
+              ><i class="fa-solid fa-globe"></i> Live</a
             >
             <a
               href="https://github.com/khushi05sharma/serenity-breath-web"
               target="_blank"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <!-- fourth project -->
-
-      <div class="project-card">
-        <img src="img/fairytale.png" alt="fairytale" />
-
-        <div class="card-content">
-          <h2>Fairytale-quiz</h2>
-          <p>
-            Designed and developed a Fairy Tale Quiz using React, featuring an
-            interactive design where users answer both trivia and
-            personality-based questions.
-          </p>
-
-          <div class="skills">
-           <span>React</span><span>Html</span><span>CSS</span
-            ><span>React Router</span>
-          </div>
-
-          <div class="links">
-           <a
-              href="https://khushi05sharma.github.io/Fairytale-quiz/"
-              target="_blank"
-              >Live</a
-            >
-            <a
-              href="https://github.com/khushi05sharma/Fairytale-quiz"
-              target="_blank"
-              >Github</a
+              class="btn-repo"
+              ><i class="fa-brands fa-github"></i> GitHub</a
             >
           </div>
         </div>
